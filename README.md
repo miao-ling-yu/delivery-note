@@ -64,6 +64,3 @@ gradle -p android assembleRelease --no-daemon
 - 可在设置页「备份数据」导出 JSON 备份文件，或「恢复数据」还原
 - 导出的 Excel / 图片 / PDF 默认保存至手机「下载/送货单统计」目录
 
-## 开源许可
-
-MIT License（如需要可自行添加 LICENSE 文件）。
