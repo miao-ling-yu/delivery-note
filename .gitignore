@@ -1,0 +1,14 @@
+# Android 构建产物
+android/.gradle/
+android/build/
+android/app/build/
+android/.idea/
+android/local.properties
+*.iml
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 临时文件
+*.tmp

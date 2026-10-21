@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="theme-color" content="#F4F2EC">
+<title>送货单统计</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div id="app">
+  <main id="view-container" aria-live="polite"></main>
+  <nav id="tabbar" aria-label="主导航">
+    <button class="tab-item" data-tab="home" aria-label="工作台">
+      <svg viewBox="0 0 24 24" class="tab-ic"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1v-9.5Z"/></svg>
+      <span>工作台</span>
+    </button>
+    <button class="tab-item tab-new" data-tab="order" aria-label="开送货单">
+      <span class="new-circle">
+        <svg viewBox="0 0 24 24" class="tab-ic"><path d="M12 5v14M5 12h14"/></svg>
+      </span>
+      <span>开单</span>
+    </button>
+    <button class="tab-item" data-tab="orders" aria-label="单据">
+      <svg viewBox="0 0 24 24" class="tab-ic"><path d="M6 3h12a1 1 0 0 1 1 1v17l-3.5-2L12 21l-3.5-2L5 21V4a1 1 0 0 1 1-1Zm3 5h6M9 12h6M9 16h4"/></svg>
+      <span>单据</span>
+    </button>
+    <button class="tab-item" data-tab="stats" aria-label="统计">
+      <svg viewBox="0 0 24 24" class="tab-ic"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>
+      <span>统计</span>
+    </button>
+    <button class="tab-item" data-tab="settings" aria-label="设置">
+      <svg viewBox="0 0 24 24" class="tab-ic"><path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm7.4-3a7.4 7.4 0 0 0-.1-1.2l2-1.5-2-3.5-2.4 1a7.6 7.6 0 0 0-2-1.2L14.5 3h-5l-.4 2.6a7.6 7.6 0 0 0-2 1.2l-2.4-1-2 3.5 2 1.5a7.4 7.4 0 0 0 0 2.4l-2 1.5 2 3.5 2.4-1a7.6 7.6 0 0 0 2 1.2l.4 2.6h5l.4-2.6a7.6 7.6 0 0 0 2-1.2l2.4 1 2-3.5-2-1.5c.07-.4.1-.8.1-1.2Z"/></svg>
+      <span>设置</span>
+    </button>
+  </nav>
+</div>
+<div id="modal-root"></div>
+<script src="js/util.js"></script>
+<script src="js/xlsx.js"></script>
+<script src="js/store.js"></script>
+<script src="js/views/home.js"></script>
+<script src="js/views/order.js"></script>
+<script src="js/views/orders.js"></script>
+<script src="js/views/stats.js"></script>
+<script src="js/views/data.js"></script>
+<script src="js/views/settings.js"></script>
+<script src="js/views/print.js"></script>
+<script src="js/views/bill.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
